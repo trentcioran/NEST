@@ -15,16 +15,16 @@ namespace Nest.Resolvers.Converters
 		public override object ReadJson(JsonReader reader, Type objectType, object existingValue,
 										JsonSerializer serializer)
 		{
-			var dict = new Dictionary<string, TemplateMapping>();
+	        var dict = new Dictionary<string, TemplateMapping>();
 			serializer.Populate(reader, dict);
-			if (dict.Count == 0)
+	        if (dict.Count == 0)
 				throw new DslException("Could not deserialize TemplateMapping1");
 
-			return new TemplateResponse
-			{
-				Name = dict.First().Key,
+	        return new TemplateResponse
+	        {
+		        Name = dict.First().Key,
 				TemplateMapping = dict.First().Value
-			};
+	        };
 		}
 
 		public override bool CanConvert(Type objectType)

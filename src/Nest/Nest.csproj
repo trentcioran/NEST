@@ -432,6 +432,7 @@
     <Compile Include="Resolvers\Converters\BulkOperationResponseItemConverter.cs" />
     <Compile Include="Resolvers\Converters\MultiGetHitConverter.cs" />
     <Compile Include="Resolvers\Converters\TemplateResponseConverter.cs" />
+    <Compile Include="Resolvers\Converters\ShardsSegmentConverter.cs" />
     <Compile Include="Resolvers\Converters\DynamicTemplatesConverter.cs" />
     <Compile Include="Resolvers\Converters\ElasticCoreTypeConverter.cs" />
     <Compile Include="Resolvers\Converters\ElasticTypeConverter.cs" />
@@ -439,7 +440,7 @@
     <Compile Include="Resolvers\Converters\GeoDistanceFacetDescriptorConverter.cs" />
     <Compile Include="Resolvers\Converters\SortGeoDistanceDescriptorConverter.cs" />
     <Compile Include="Resolvers\Converters\RawOrQueryDescriptorConverter.cs" />
-    <Compile Include="Resolvers\Converters\ShardSegmentConverter.cs" />
+    <Compile Include="Resolvers\Converters\TemplateResponseConverter.cs" />
     <Compile Include="Resolvers\Converters\IndexSettingsConverter.cs" />
     <Compile Include="Domain\Hit\ShardsMetaData.cs" />
     <Compile Include="ElasticClient-Count.cs" />
