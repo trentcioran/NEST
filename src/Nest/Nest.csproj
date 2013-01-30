@@ -73,6 +73,7 @@
     <Compile Include="Domain\Responses\IBulkResponse.cs" />
     <Compile Include="Domain\Settings\SimilaritySettings.cs" />
     <Compile Include="ElasticClient-MultiSearch.cs" />
+    <Compile Include="Domain\Mapping\Types\WarmerMappingWrapper.cs" />
     <Compile Include="Domain\Mapping\Types\WarmerMapping.cs" />
     <Compile Include="Domain\Responses\WarmerResponse.cs">
       <SubType>Code</SubType>
