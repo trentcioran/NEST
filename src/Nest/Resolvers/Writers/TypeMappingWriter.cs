@@ -233,6 +233,11 @@ namespace Nest.Resolvers.Writers
 		    var visitor = new WritePropertiesFromAttributeVisitor(jsonWriter, propertyName, type);
             att.Accept(visitor);
 
+      if (!att.Similarity.IsNullOrEmpty())
+      {
+        jsonWriter.WritePropertyName("similarity");
+        jsonWriter.WriteValue(att.Similarity);
+      }
 		}
 
 		/// <summary>
